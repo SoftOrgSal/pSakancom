@@ -1,17 +1,17 @@
-package najah.edu.acceptance;
+package org.example.acceptese;
 
 import static org.junit.Assert.assertTrue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import mainclasses.user;
+import org.example.User;
 
 public class SignUpFeatureSteps {
 	
 	
 	boolean user_signup=false;
-	user user1;
+	User user1;
 	
 	@Given("the user is on the sign-up page")
 	public void theUserIsOnTheSignUpPage() {

@@ -35,8 +35,8 @@ public class LoginFeatureSteps {
 
 		@Given("I check for the email  and pass email {string} pass {string}")
 		public void i_check_for_the_email_and_pass_email_pass(String string1, String string2) {
-			adm.Email=string1;
-			adm.password=string2;
+			adm.setEmail(string1);
+			adm.setPassword(string2);
 			if( adm.check(string1,string2)==1) {
 				 flag_login=true;
 			}
@@ -93,7 +93,7 @@ public class LoginFeatureSteps {
 	public void iChekForEmailAndPasswordIs(String string, String string2) {
 		user1.email=string;
 		user1.password=string2;
-		if( user1.checkuser(string,string2)==1) {
+		if( user1.checkuser(string, string2)==1) {
 			flag_user=true;
 
 		}

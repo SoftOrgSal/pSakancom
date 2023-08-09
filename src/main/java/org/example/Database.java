@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 public class Database {
-   protected static final  List <User> dbUser=new ArrayList <User> ();
+   public static final  List <User> dbUser=new ArrayList <User> ();
 	 List <Furniture> dbfurniture=new ArrayList <Furniture>();
 	 List <Apartment> dbapartment=new ArrayList <Apartment>();
  private static final Logger logger = Logger.getLogger(Database.class.getName());

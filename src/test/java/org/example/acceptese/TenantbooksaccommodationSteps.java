@@ -1,12 +1,12 @@
-package najah.edu.acceptance;
+package org.example.acceptese;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import mainclasses.Building;
-import mainclasses.main;
+import org.example.Building;
+import org.example.Main;
 public class TenantbooksaccommodationSteps {
 
 boolean flag;
@@ -18,7 +18,7 @@ boolean flag;
 	@When("the tenant clicks on  {string}")
 	public void theTenantClicksOn(String string) {
 		if(string.equals("book")) {
-			main.TenantDashboard();
+			Main.tenantDashboard();
 			assertTrue(flag);
 		}
 		else {

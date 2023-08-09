@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.Database;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -17,7 +16,7 @@ public class User {
 	   float point=0;
 	   int age;
 	   String major;
-	   private String type; 
+	   public String type;
 	   private String book;	  
 		 static User u1;
          static List <User> userarray=new  ArrayList <User> ();
@@ -29,7 +28,7 @@ public class User {
 			
 		 }
 
-	public static void signup(Owner own) {
+	public static void signup(User own) {
 	}
 
 	public  void initialUser() {
@@ -169,10 +168,17 @@ public class User {
 			return type;
 		}
 
-		public void setType(String type) {
+		public Object[] setType(String type) {
 			this.type = type;
+			return new Object[0];
 		}
 
-		
-		
-	}
+	public int checkuser(String string, String string2) {
+        return 0;
+    }
+
+
+//	public int checkuser(String string, String string2) {
+//
+//    }
+}

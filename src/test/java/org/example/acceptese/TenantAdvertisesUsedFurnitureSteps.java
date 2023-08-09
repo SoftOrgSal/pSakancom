@@ -1,10 +1,10 @@
-package najah.edu.acceptance;
+package org.example.acceptese;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import mainclasses.main;
-import mainclasses.owner;
-import mainclasses.user;
+import org.example.Main;
+import org.example.Owner;
+import org.example.User;
 
 import static org.junit.Assert.assertTrue;
 
@@ -17,9 +17,9 @@ public class TenantAdvertisesUsedFurnitureSteps {
     private boolean onControlPanel = false;
     private boolean sellFurnitureButtonClicked = false;
     
-	static List <user> userarray   = new ArrayList <user> ();
+	static List <User> userarray   = new ArrayList <User> ();
 
-    user use=new user();
+    User use=new User();
 
     @Given("the tenant is logged in the system")
     public void theTenantIsLoggedInTheSystem() {

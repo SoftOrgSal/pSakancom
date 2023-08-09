@@ -1,6 +1,8 @@
-import components.BuildingComponent;
-import components.UserComponent;
-import constants.UserTypes;
+package org.example;
+
+import org.example.components.BuildingComponent;
+import org.example.components.UserComponent;
+import org.example.constants.UserTypes;
 import exceptions.BuildingNotFoundException;
 import exceptions.UserTypeException;
 

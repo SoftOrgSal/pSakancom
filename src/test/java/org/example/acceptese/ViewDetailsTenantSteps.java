@@ -1,4 +1,4 @@
-package najah.edu.acceptance;
+package org.example.acceptese;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When; 
-import mainclasses.Apartment;
-import mainclasses.Building;
-import mainclasses.main;
+import org.example.Apartment;
+import org.example.Building;
+import org.example.Main;
 public class ViewDetailsTenantSteps {
     private boolean housingOptionSelected = false;
     private boolean detailsButtonClicked = false;
@@ -31,7 +31,7 @@ public class ViewDetailsTenantSteps {
     }
     @Then("the housing details, amenities, and pictures are displayed")
     public void theHousingDetailsAmenitiesAndPicturesAreDisplayed() {
-    	main.TenantDashboard();
+    	Main.tenantDashboard();
     	
     }
 
